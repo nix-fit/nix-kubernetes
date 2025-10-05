@@ -1,4 +1,4 @@
-@Library('nix-sharedlib@feat/library') _
+@Library('nix-sharedlib@master') _
 
 deployHelmChart(
     chartRepoName: params.chartRepoName,
