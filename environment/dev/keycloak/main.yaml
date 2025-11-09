@@ -5,6 +5,7 @@ ingress:
   host: auth-dev.nix-fit.ru
   tlsSecretName: keycloak-ingress-nginx-tls
 
-env:
-  kcHostname: auth-dev.nix-fit.ru
-  kcDbUrl: jdbc:postgresql://e927970eef65f16b19d9f818.twc1.net:5432/keycloak_db?sslmode=verify-full&sslrootcert=/etc/ssl/db/ca.crt
+app:
+  env:
+    KC_HOSTNAME: auth-dev.nix-fit.ru
+    KC_DB_URL: jdbc:postgresql://e927970eef65f16b19d9f818.twc1.net:5432/keycloak_db?sslmode=verify-full&sslrootcert=/etc/ssl/db-ca.crt
